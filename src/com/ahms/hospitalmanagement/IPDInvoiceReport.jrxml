@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.3.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IPDInvoiceReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5bd05189-6889-4dc9-a03c-c8b5319be783">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="admissionDate" class="java.lang.String"/>
+	<field name="surname" class="java.lang.String"/>
+	<field name="othernames" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="admissionDues" class="java.lang.String"/>
+	<field name="clinicDues" class="java.lang.String"/>
+	<field name="pharmacyDues" class="java.lang.String"/>
+	<field name="laboratoryDues" class="java.lang.String"/>
+	<field name="procedureDues" class="java.lang.String"/>
+	<field name="totalReceivable" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-17" width="50" height="16" uuid="1ab2abc0-88da-454a-849b-49145e669502"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Printed: ]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="50" y="-17" width="90" height="16" uuid="84ec04af-75a2-4d8d-86ae-047b326b08c2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="20" width="440" height="29" uuid="2e6ad271-4744-44fc-bc26-c922b46ab90b"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital and Specialist Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="50" width="386" height="20" uuid="5c1291e1-b6bf-4d77-b5ed-7ec40cfc93c2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="70" width="140" height="21" uuid="913f0d6d-8288-46e9-99f1-149b4f754a76"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Inpatient Invoice]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="223" splitType="Stretch">
+			<staticText>
+				<reportElement x="23" y="9" width="97" height="20" uuid="0191ff03-3479-462c-8660-f425da534d12"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admission Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="29" width="80" height="18" uuid="fcc300bf-76be-4992-9fda-3747fa700ae1"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="81" width="97" height="21" uuid="4f8f6a6b-a731-44e4-ad68-8acfac717133"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinic Due]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="103" width="97" height="20" uuid="d7a09440-856f-4908-b6e4-a06a86cbbd80"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pharmacy Due]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="123" width="97" height="20" uuid="66088e0d-c743-4f46-bd6f-1f6b84163c0c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laboratory Due]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="144" width="97" height="20" uuid="66dbe30f-03cd-4095-a579-9ff31fd5ebe6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Procedure Due]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="174" width="97" height="20" uuid="65ca9ea8-8d46-4097-b472-9d302e24db66"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Due]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="60" width="97" height="21" uuid="fb16ec43-fa28-406f-81c3-daeacd92bc37"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admission Due]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="9" width="100" height="20" uuid="2a30f0f9-7154-40d5-b33f-53c9177c30fb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="29" width="80" height="18" uuid="2601d06b-e251-47cc-a9f6-388c5f2b4673"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="29" width="120" height="20" uuid="7ba8484a-2dbb-4902-af22-6eb56e067d7b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{othernames}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="60" width="100" height="21" uuid="cf89694e-e521-49f0-a633-3ea402e62fb6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionDues}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="81" width="100" height="21" uuid="a991e521-b75b-4b50-92ec-4763a64169c6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clinicDues}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="103" width="100" height="20" uuid="48227ffc-437b-4965-b664-937ead1d0d6c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pharmacyDues}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="123" width="100" height="20" uuid="7e295f7d-c12a-46b9-ba84-2e50fbc92955"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{laboratoryDues}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="143" width="100" height="21" uuid="4b28c8ca-e07a-4945-8739-1697a0309e71"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{procedureDues}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="174" width="110" height="20" uuid="09a6bcae-da9c-484a-b595-4e20905afb32"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalReceivable}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

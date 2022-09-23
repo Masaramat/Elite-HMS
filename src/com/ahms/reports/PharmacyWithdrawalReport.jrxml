@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.13.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PharmacyWithdrawalReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8727e80d-0825-42ea-98c4-a75a7d87da4b">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="drugName" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement x="113" y="60" width="300" height="21" uuid="545f27d3-8fa7-4b3c-8cd9-aa3afa0f5529"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Pharmacy Stock Withdrawal Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="40" width="406" height="20" uuid="01f712be-dc8a-4625-8ac0-6bcf5b9c8577"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="10" width="440" height="29" uuid="c2d970cb-a996-405c-948d-23ac5f525f7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital Limited]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="80" width="50" height="16" uuid="7ecd37d6-7b00-4bd9-b4f5-9f6b96f42a7c"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Printed: ]]></text>
+			</staticText>
+			<textField pattern="MMM d, yyyy h:mm a">
+				<reportElement x="440" y="80" width="110" height="16" uuid="3c046106-423e-4ae7-80c4-09ad1eaae701"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="10" width="31" height="19" uuid="ccc15bdf-afb1-4613-88f8-e6498c903c0d"/>
+				<text><![CDATA[S/No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="10" width="197" height="19" uuid="15279e7a-042f-4621-aa8a-815c701e71a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06014f2a-b072-4d7a-82ce-d2465073c3f0"/>
+				</reportElement>
+				<text><![CDATA[Drug Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="10" width="102" height="19" uuid="27abcb52-4cb2-4b4b-a0bf-c9fb483de9ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff3c93bc-6128-4462-bef0-72d28d74204c"/>
+				</reportElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="0" width="31" height="20" uuid="57fe6e47-8f3a-4aa1-822c-bc23edc4b721"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="0" width="197" height="20" uuid="a0949317-6293-465c-aab7-c1d3f2aa4dd0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06014f2a-b072-4d7a-82ce-d2465073c3f0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{drugName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="0" width="102" height="20" uuid="c01327d1-d09b-4367-9e8b-5494e6ee3953">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff3c93bc-6128-4462-bef0-72d28d74204c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="81" y="0" width="31" height="19" uuid="33a446d1-ca6f-42b2-95bd-aeedfe3bfef0"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="50" y="0" width="31" height="19" uuid="38db1570-1925-4a2c-873c-402179509959"/>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

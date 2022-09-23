@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.13.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="OperationNotePrintout" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8c913322-90ba-4918-9ec4-01a2e3aa0de4">
+	<parameter name="patientName" class="java.lang.String"/>
+	<parameter name="gender" class="java.lang.String"/>
+	<parameter name="hospitalNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<field name="procedureName" class="java.lang.String"/>
+	<field name="findings" class="java.lang.String"/>
+	<field name="procedure" class="java.lang.String"/>
+	<field name="drain" class="java.lang.String"/>
+	<field name="detailsOfSpecimen" class="java.lang.String"/>
+	<field name="histologySent" class="java.lang.String"/>
+	<field name="remarks" class="java.lang.String"/>
+	<field name="surgeon" class="java.lang.String"/>
+	<field name="asstSurgeon" class="java.lang.String"/>
+	<field name="anaesthetist" class="java.lang.String"/>
+	<field name="scrubNurse" class="java.lang.String"/>
+	<field name="preOpDiagnosis" class="java.lang.String"/>
+	<field name="postOpDiagnosis" class="java.lang.String"/>
+	<field name="postOpTreatment" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="10" width="440" height="29" uuid="3ebdda9c-0ae5-4475-9b4d-c8be9d8b3bce"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital and Specialist Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="40" width="386" height="20" uuid="623d4310-723e-4b1c-88de-4014d05848ab"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="60" width="240" height="21" uuid="ee3d5d0c-8add-42c0-bd08-f5df7342a686"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Operation Note]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="638" splitType="Stretch">
+			<textField>
+				<reportElement x="390" y="32" width="155" height="18" uuid="afebc7ec-efea-47f1-b748-da46c4b9e33a"/>
+				<textFieldExpression><![CDATA[$F{invoiceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="70" width="434" height="18" uuid="db6070e1-0116-4236-81a3-12a57993c14e"/>
+				<textFieldExpression><![CDATA[$F{procedureName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="250" width="534" height="30" uuid="f89a9301-d36f-4aeb-ab23-ebe650ace21a"/>
+				<textFieldExpression><![CDATA[$F{findings}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="300" width="534" height="60" uuid="1925d109-891b-4ef7-a45b-19488409a78a"/>
+				<textFieldExpression><![CDATA[$F{procedure}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="480" width="449" height="20" uuid="69264818-97b3-46c2-aa9a-b9ae26835b85"/>
+				<textFieldExpression><![CDATA[$F{drain}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="500" width="450" height="20" uuid="546e6555-fea7-4d2e-a8d4-ae47df3ee90f"/>
+				<textFieldExpression><![CDATA[$F{detailsOfSpecimen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="520" width="449" height="20" uuid="26fdbb37-b23e-4ba2-8872-2e488b073984"/>
+				<textFieldExpression><![CDATA[$F{histologySent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="540" width="449" height="20" uuid="25344a53-c904-4107-a01f-0722bc1f583f"/>
+				<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="88" width="160" height="22" uuid="35a75a39-acac-4672-9525-6d34a923119f"/>
+				<textFieldExpression><![CDATA[$F{surgeon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="88" width="155" height="22" uuid="a08024a1-3eef-43f5-b773-619f02060107"/>
+				<textFieldExpression><![CDATA[$F{asstSurgeon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="110" width="160" height="20" uuid="f30496fa-7c38-482c-a768-b28e134bfdef"/>
+				<textFieldExpression><![CDATA[$F{anaesthetist}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="110" width="155" height="20" uuid="fb891418-5c30-4958-92a5-d609370ca6de"/>
+				<textFieldExpression><![CDATA[$F{scrubNurse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="170" width="535" height="20" uuid="d98fde15-1669-43e1-9a31-fc7e218a85f7"/>
+				<textFieldExpression><![CDATA[$F{preOpDiagnosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="210" width="535" height="20" uuid="b488964a-a52e-4c42-87ba-95e454822e0f"/>
+				<textFieldExpression><![CDATA[$F{postOpDiagnosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="390" width="535" height="60" uuid="5f5abd1a-f255-486b-9d58-cedb878c263c"/>
+				<textFieldExpression><![CDATA[$F{postOpTreatment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="10" width="160" height="22" uuid="3882737a-3676-4ce4-9b74-b1b19dd55ce5"/>
+				<textFieldExpression><![CDATA[$P{patientName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="10" width="86" height="22" uuid="e64e9cce-cc09-4adc-a8a4-03d88cf78c51"/>
+				<text><![CDATA[Patient Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="10" width="77" height="22" uuid="c005ea84-a687-4226-9b9d-25ddce44232d"/>
+				<text><![CDATA[Hospital No]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="10" width="154" height="22" uuid="8b77db71-b141-4f87-811c-9f3d1ae2db57"/>
+				<textFieldExpression><![CDATA[$P{hospitalNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="32" width="86" height="18" uuid="56bf67e8-20e4-47a3-8457-5a38556bd83d"/>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="32" width="109" height="18" uuid="03215b28-f4f5-479c-beee-bd1aafc2f27c"/>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="303" y="32" width="77" height="18" uuid="ae76b5d4-2762-4ff1-9f63-3b334eaa1ac7"/>
+				<text><![CDATA[Invoice No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="70" width="86" height="18" uuid="c0c4d14b-70c8-460a-b669-7280612e3f99"/>
+				<text><![CDATA[Procedure Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="88" width="86" height="22" uuid="e3e8f416-3d77-4d9f-a0dc-64543fac639b"/>
+				<text><![CDATA[Surgeon:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="88" width="77" height="22" uuid="b1771257-a3ed-4cc2-aad4-1b6ac99bde87"/>
+				<text><![CDATA[Asst. Surgeon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="110" width="77" height="20" uuid="85a1ccc4-4c2e-4b51-8fca-0db27ab5031b"/>
+				<text><![CDATA[Scrub Nurse:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="110" width="86" height="20" uuid="f4204b4c-34d4-4b5b-87c7-c07232bbe2c6"/>
+				<text><![CDATA[Anesthesiologist:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="150" width="170" height="20" uuid="102a43d1-d0fa-43bd-ae42-c7a928d8d9d1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pre Operation Diagnosis:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="190" width="170" height="20" uuid="2fecc1c3-3862-44b8-bc4b-3c8c569670b9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post Operation Diagnosis:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="230" width="170" height="20" uuid="30d811dc-efa1-42cc-b07c-f289b2fe203e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Findings:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="280" width="170" height="20" uuid="324dad35-111e-4dd8-9a95-9c9090d92963"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Procedures:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="370" width="270" height="20" uuid="1c6e72dd-cb96-4243-9fcd-4bb10d8c2a04"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post Operation Orders / Treatment:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="460" width="270" height="20" uuid="373fbcb1-6959-4894-8a08-55424216135d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Special Notes:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="480" width="86" height="20" uuid="e0becb2d-af4b-466a-9a65-a7ea570b8af8"/>
+				<text><![CDATA[Drain:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="520" width="86" height="20" uuid="e7449797-ba3c-4480-80a3-af3956988271"/>
+				<text><![CDATA[Histology Sent:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="500" width="85" height="20" uuid="d9e178b4-25a7-427a-b98a-0f193c7da401"/>
+				<text><![CDATA[Specimen Details:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="540" width="86" height="20" uuid="5f560307-73a7-44e0-abad-ffee8b5b1310"/>
+				<text><![CDATA[Histology Sent:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="608" width="56" height="22" uuid="d6677508-b5cb-4356-9d48-5d068423cb8b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surgeon:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="610" width="210" height="21" uuid="a189796a-ff64-43ee-a35a-672143229cd7"/>
+				<text><![CDATA[_________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="608" width="56" height="22" uuid="fb068faa-c71f-4d03-af65-2dc9714769cc"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="610" width="210" height="21" uuid="b4fe10c9-3685-4696-ac24-f29d1d1e8222"/>
+				<text><![CDATA[_________________________________]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

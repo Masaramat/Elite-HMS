@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.13.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InpatientAdmissionReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1296cbc2-7c6b-4ff6-a917-cb3f91ea947e">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<field name="fullname" class="java.lang.String"/>
+	<field name="admittingDoctor" class="java.lang.String"/>
+	<field name="admissionDate" class="java.lang.String"/>
+	<field name="admBedDays" class="java.lang.Integer"/>
+	<field name="emrStatus" class="java.lang.String"/>
+	<field name="admissionStatus" class="java.lang.String"/>
+	<variable name="invoiceNo1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{invoiceNo}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="0" width="440" height="29" uuid="ba317069-1388-4eee-a6e0-470dc662cbcb"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital Limited]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="30" width="406" height="20" uuid="7deb734e-8b51-442e-a762-0406dccf2963"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="50" width="300" height="21" uuid="83cb345b-ec07-43c6-bf00-734be6ed5cb6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Inpatient Admission Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="69" width="50" height="16" uuid="536ac859-9182-40ed-ae18-e429ca512137"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Printed: ]]></text>
+			</staticText>
+			<textField pattern="MMM d, yyyy h:mm a">
+				<reportElement x="670" y="70" width="110" height="16" uuid="cc6b7f56-6b93-45f7-bc5d-604742acb6bf"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="10" width="30" height="16" uuid="404ae0ca-99c1-45c9-80b8-92892e12e9af"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[S/No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="10" width="70" height="16" uuid="680b628d-705c-4ade-b5b7-0e8070725285">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="981397ea-a7ba-4496-816f-ad40ac47916b"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Invoice No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="10" width="150" height="16" uuid="a8c964c5-7e83-4068-a6d6-cb841581b04e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52f5ba5f-7784-4f4e-bdd8-c89c3be10ca2"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="10" width="120" height="16" uuid="d593c015-c465-40e7-b45f-46f7a5c7900f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d12acc06-5fda-47b7-903e-034fe0b86956"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Admitting Doctor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="10" width="90" height="16" uuid="83f91333-25bd-41dd-ace3-494ae2ba394e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="870a7d4c-fc80-45d5-97fe-818d7d266019"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Admission Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="10" width="100" height="16" uuid="17d3421b-1d67-4653-bc63-308d529d0537">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="22dcdeb8-4166-4fda-8a04-e0948c85d487"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Days on Admission]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="610" y="10" width="90" height="16" uuid="339f052a-096a-49a6-b199-55fba15d40f1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d93a51fe-167c-40e2-b4fd-825cba7517d1"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Cons. Status ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="10" width="80" height="16" uuid="88119be0-fa85-4a63-89b2-15df3a8f346a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27fa8c2f-56f0-4ccb-9881-228c7771dae9"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Admission Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="0" width="30" height="20" uuid="04dbe59f-0c03-4111-b50a-993d56ff1714"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="70" height="20" uuid="74070fd6-d09f-4144-8f9f-ef3a60a960e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="981397ea-a7ba-4496-816f-ad40ac47916b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{invoiceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="150" height="20" uuid="520c25a7-7c97-4d3b-9d98-b1c708c0af1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52f5ba5f-7784-4f4e-bdd8-c89c3be10ca2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{fullname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="120" height="20" uuid="3d3fa85a-28fc-4a1d-9bb4-e741a199f00e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d12acc06-5fda-47b7-903e-034fe0b86956"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{admittingDoctor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="90" height="20" uuid="30362bf0-8cbe-4a07-989c-d5450665c88d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="870a7d4c-fc80-45d5-97fe-818d7d266019"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{admissionDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="0" width="100" height="20" uuid="48aa1831-e121-427b-b981-966eb80049ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="22dcdeb8-4166-4fda-8a04-e0948c85d487"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{admBedDays}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="610" y="0" width="90" height="20" uuid="f379d126-6d0a-4f83-9204-f0b6925fa437">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d93a51fe-167c-40e2-b4fd-825cba7517d1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{emrStatus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="0" width="80" height="20" uuid="0bb6a01c-71d1-46b7-b14a-eb9bcf809e9b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27fa8c2f-56f0-4ccb-9881-228c7771dae9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{admissionStatus}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="0" width="30" height="16" uuid="26d8eaf2-e9fa-47cc-9bde-e6c908cbd42a"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="50" y="0" width="50" height="16" uuid="02226565-0994-4ecd-b8b7-a38207a08bf2"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

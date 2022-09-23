@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GroupTestReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="536c2f6f-a8ed-4e99-9955-426cf0b6929b">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="bedNo" class="java.lang.String"/>
+	<field name="bedDetails" class="java.lang.String"/>
+	<field name="bedLocation" class="java.lang.String"/>
+	<field name="wardName" class="java.lang.String"/>
+	<field name="bedGender" class="java.lang.String"/>
+	<field name="categoryDesc" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="roomId" class="java.lang.String"/>
+	<field name="bedCharge" class="java.lang.Double"/>
+	<group name="RoomGroup">
+		<groupExpression><![CDATA[$F{wardName}]]></groupExpression>
+		<groupHeader>
+			<band height="26">
+				<textField>
+					<reportElement x="0" y="0" width="160" height="21" uuid="1a2fe18a-4507-407e-85d5-ca63adc28cd3"/>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{wardName}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="10" width="440" height="29" uuid="b2fa4895-6cb0-496b-a08f-7edef5c32f52"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital and Specialist Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="40" width="386" height="20" uuid="82346fd1-a3d2-4c85-afa7-bbbe2544248d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="60" width="140" height="21" uuid="d6c7cd33-0ddc-4f00-8102-f0468447b4ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Inpatient Invoice]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="7" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="80" height="20" uuid="46aa7a91-218f-44db-b5da-b9ffc61bed57">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b17bee23-dac2-4b77-8253-f530ae98f57f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bedDetails}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="100" height="20" uuid="3a4bab3b-6143-467e-b388-d9ca836565cd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70378f47-cf7b-463e-a010-5ac33fb470c7"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bedLocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="100" height="20" uuid="706a4bad-1b07-4b68-ad41-c28d8149d0c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e340e405-c0e1-4654-a7f5-9cab491d1194"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bedCharge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="80" height="20" uuid="df22f9ca-0fc8-420b-8e57-86c0f7d8a8c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c42c64be-9deb-44cd-8b82-f0f7a45eb7fe"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.13.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GeneralDepositReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="96de7123-7149-443d-be06-33edbd5fb673">
+	<parameter name="totalDeposit" class="java.lang.String"/>
+	<parameter name="fromdate" class="java.lang.String"/>
+	<parameter name="todate" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<field name="modeOfPayment" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="0" width="440" height="29" uuid="7ab62b4f-d8e7-4914-b212-2d0b17860e3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital Limited]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="30" width="406" height="20" uuid="df00f8f1-b3fb-4131-bcb9-a2e04aaf4bfc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="123" y="50" width="300" height="21" uuid="9700b0ba-f0d1-4b9e-b382-a5a6031b112f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[General Deposit Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="76" width="40" height="16" uuid="495c7abf-0b13-4126-956d-8aa6ed5bd4b4"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Printed: ]]></text>
+			</staticText>
+			<textField pattern="MMM d, yyyy h:mm a">
+				<reportElement x="440" y="75" width="110" height="16" uuid="3fa9e315-50b4-4e9f-a395-f7371e8c1801"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="113" y="74" width="60" height="20" uuid="03632e33-52f8-4a07-b23a-e07e3aa72937"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[From Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="74" width="70" height="20" uuid="a86b2ed3-a5c8-4268-8e0b-67651351762b"/>
+				<textFieldExpression><![CDATA[$P{fromdate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="253" y="74" width="50" height="20" uuid="a6d2f33c-ef54-4c75-adc1-1c841842e0bb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[To Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="303" y="74" width="77" height="19" uuid="dfdfbcbd-a691-406b-8362-83d9d0907779"/>
+				<textFieldExpression><![CDATA[$P{todate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="13" width="30" height="17" uuid="d2823efb-26f7-4604-97a0-7b9a9cf565d4"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[S/No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="13" width="80" height="17" uuid="0f2326ed-4dda-4c7f-ace3-52fbba8ec8bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07f16f34-3cd5-42d2-9862-32b19c470939"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Invoice No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="13" width="110" height="17" uuid="44618c1a-6eca-4087-a7b4-6c98fe0813e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd172360-fc72-4e16-8847-f8b711ffef41"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Mode Of Payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="13" width="99" height="17" uuid="146696f1-1ccb-4461-b91b-205914c94173">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4952300-ae1e-46fd-8217-f1d3f09388f1"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="13" width="110" height="17" uuid="9846d3da-9f41-432a-bc49-c730988dee63">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2f531710-5b60-4d82-aed5-fc4928bb827e"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="0" width="30" height="20" uuid="e150d044-71ba-4249-aebe-d669c75093d5"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="80" height="20" uuid="d52bdecb-b235-4d56-b59a-918c083f1207">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07f16f34-3cd5-42d2-9862-32b19c470939"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{invoiceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="110" height="20" uuid="afa71076-9b20-492c-9b6a-a7bbcea16452">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd172360-fc72-4e16-8847-f8b711ffef41"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{modeOfPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="99" height="20" uuid="94d78cc4-7342-41c3-99fd-0f3a9b18db55">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4952300-ae1e-46fd-8217-f1d3f09388f1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="0" width="110" height="20" uuid="17eff191-b791-46d9-aa68-6b03ebf1c2c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2f531710-5b60-4d82-aed5-fc4928bb827e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="3" width="30" height="17" uuid="2211596e-fc60-4bd1-9fd8-6ddd3c9bc9b1"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="3" width="30" height="17" forecolor="#0D10BF" uuid="a79abe2a-df76-4f57-ba33-8d1f27ec5da3"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="3" width="110" height="17" forecolor="#0D10BF" uuid="80a4b64f-a655-4f3d-a945-a9d1bcfd1c49"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalDeposit}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

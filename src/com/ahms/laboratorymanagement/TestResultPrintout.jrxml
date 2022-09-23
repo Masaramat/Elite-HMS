@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.13.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TestResultPrintout" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="75a4ad58-73db-4011-8150-6152d05180e8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="invoice_no" class="java.lang.String"/>
+	<field name="test_id" class="java.lang.String"/>
+	<field name="test_name" class="java.lang.String"/>
+	<field name="parameter_code" class="java.lang.String"/>
+	<field name="result" class="java.lang.String"/>
+	<field name="test_parameter" class="java.lang.String"/>
+	<field name="unit" class="java.lang.String"/>
+	<field name="normal_range" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{test_name}]]></groupExpression>
+		<groupHeader>
+			<band height="23">
+				<textField>
+					<reportElement x="20" y="2" width="280" height="20" uuid="072e01ad-0106-47e8-96cf-9212f715895c"/>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{test_name}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="5"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="10" width="440" height="29" uuid="debf2106-16b7-4351-8919-334bece5de16"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital and Specialist Medical Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="40" width="386" height="20" uuid="aaba8e8c-aeae-44be-b04d-7adc962f0a2f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="60" width="240" height="21" uuid="a576abfc-66db-4385-bf4a-4f2fb17454c6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Laboratory Test Results]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="230" y="0" width="60" height="20" uuid="59ef915d-28b8-4f92-bfa2-d5716d4202ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63bf8f1d-b182-4d1b-a85a-b71319b51702"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{result}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="-1" width="100" height="20" uuid="1dc2156a-c377-4229-afc4-25cde4f3e899">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0526f942-5823-4425-a447-e40c8333ae92"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{unit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="1" width="150" height="20" uuid="2101b283-7d13-4a1f-b21d-53c48f6600f0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="decbf730-11a0-4d91-ad19-77d794f35075"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{test_parameter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="142" height="20" uuid="273f3b73-6c22-430c-a58a-6a8e7b8b5f42">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a72a56a1-cab1-49e0-98b0-85fa25dfde16"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{normal_range}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

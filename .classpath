@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/Absolute HMS API"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/bcmail-jdk14-1.38.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/bcmail-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/bcprov-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/bctsp-jdk14-1.38.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/castor-core-1.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/castor-xml-1.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/core-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/ecj-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/icu4j-57.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/itext-2.1.7.js5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jackson-annotations-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jackson-core-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jackson-databind-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jakarta-regexp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jasperreports-6.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/lucene-analyzers-common-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/lucene-core-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/lucene-queries-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/lucene-queryparser-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/lucene-sandbox-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/olap4j-0.9.7.309-JS-3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/spring-aop-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/spring-asm-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/spring-beans-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/spring-context-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/spring-core-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/spring-expression-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/stax-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jasper/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jcalendar-1.4.jar/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/jcommon/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/joda-time-2.0.jar/joda-time-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manguti/eclipse-workspace/JAR files/swingx-all-1.6.4.jar/swingx-all-1.6.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

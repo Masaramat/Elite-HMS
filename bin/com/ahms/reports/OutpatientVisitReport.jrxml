@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.13.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="OutpatientVisitReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5901c44f-9846-4b34-bbc0-9ea03a8bb8b0">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<field name="fullname" class="java.lang.String"/>
+	<field name="doctor" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="emrSratus" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="0" width="440" height="29" uuid="b9246070-e0fa-4bde-9f82-509beb8d914a"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified" rotation="None">
+					<font fontName="Arial Rounded MT Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Surgicare Hospital Limited]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="30" width="406" height="20" uuid="149f382d-cb00-433c-8d6e-9873754712e7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Plot 850, 1(S) Road, FHA Lugbe, Abuja.    07030914926, 09074006043]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="50" width="300" height="21" uuid="170f5c2f-1bd5-44d1-85fc-86401e95413c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="16" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Outpatient Visit Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="60" width="50" height="16" uuid="d135fb9b-a346-4b95-a905-6c569e61b7df"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Printed: ]]></text>
+			</staticText>
+			<textField pattern="MMM d, yyyy h:mm a">
+				<reportElement x="670" y="60" width="110" height="16" uuid="94a45d10-f148-46eb-9549-7f7e25644148"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="22" y="10" width="29" height="21" uuid="80b518f3-0fc7-4a7b-a8dc-8dd3db9e916e"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[S/No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="10" width="99" height="21" uuid="2ada8aec-2108-4634-9fb3-2900e9db4bdd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2db61eab-7239-4dfb-b6e3-fd161a5e8ff4"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Invoice No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="10" width="200" height="21" uuid="5cf4aceb-c526-41da-8e76-e27ce8028c20">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b942efa0-bec9-4092-882f-616894f383ee"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="10" width="110" height="20" uuid="7923ec90-d6ff-471a-bbdb-968a6b6c9dab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58dcc917-65ea-45c6-8f05-dd7fd7d8a4bf"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Doctor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="10" width="83" height="20" uuid="655de0a6-8164-48d6-8d11-88e4cf62b1a2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a037c539-c341-4da9-8167-faa6211ad402"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="630" y="10" width="90" height="20" uuid="fa1a7f92-73cb-4ea0-bf9f-8a45fa08be43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ef0e3e2-b369-4e0f-8a86-998aa6916259"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Cons. Sratus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="543" y="10" width="87" height="20" uuid="e9f8e80c-1ac1-4db2-bd81-46d330efd345">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0280f128-dcc4-405f-a5b9-52d33e958487"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Visit Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="22" y="0" width="29" height="19" uuid="21280a35-d095-4ab2-a9de-563e5c8554ea"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="51" y="0" width="99" height="20" uuid="91c01684-b9b9-4fa0-b442-b3216c83eb32">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2db61eab-7239-4dfb-b6e3-fd161a5e8ff4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{invoiceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="200" height="20" uuid="b66a23c0-f593-47df-93c9-b04849b33011">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b942efa0-bec9-4092-882f-616894f383ee"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{fullname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="110" height="20" uuid="c196c268-13b4-4345-bc40-1c7c56d43364">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58dcc917-65ea-45c6-8f05-dd7fd7d8a4bf"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{doctor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="83" height="20" uuid="228d6345-d5f8-4eaf-98d0-20257afcd6fd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a037c539-c341-4da9-8167-faa6211ad402"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="-1" width="90" height="20" uuid="1966acc7-9e92-4d2d-a4fe-31cb3ab997fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ef0e3e2-b369-4e0f-8a86-998aa6916259"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{emrSratus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="543" y="0" width="87" height="20" uuid="c7622e18-3c7e-4091-aa75-1417eac7cbaf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0280f128-dcc4-405f-a5b9-52d33e958487"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="51" y="0" width="49" height="21" uuid="7a63b094-930a-4ecf-8dff-f8e2cb637f27"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="0" width="31" height="21" uuid="8160e0dd-3644-44ea-a11f-3ede513af7c5"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
